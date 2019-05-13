@@ -1,7 +1,7 @@
 <template>
     <section class="nav">
         <div class="nav-logo">
-            <img height="160px" src="https://www.freelogodesign.org/Content/img/logo-ex-2.png" alt="logo">
+            <img height="140px" src="https://www.freelogodesign.org/Content/img/logo-ex-2.png" alt="logo">
         </div>
         <div class="nav-menu">
             <ul class="nav-menu-list">
@@ -20,30 +20,33 @@ export default {
 
 <style lang="sass" scoped>
 .nav
-    position: fixed
-    left: 0
-    top: 0
-    bottom: 0
     background: #333
-    disply: flex
+    display: flex
     flex-direction: column
+    justify-content: space-around
     aligh-items: center 
-    width: 20vw
     .nav-logo
-        margin: 100px auto
+        margin: 20px auto
     .nav-menu
-        color: white
+        width: 100%
+
 .nav-menu-list
     list-style: none
     padding: 0
-    .nav-list-item
-        background: #222
-        padding: 10px 20px
+    display: flex
+    margin: 0
+    color: white
+    li
+        width: 50%
         text-align: center
-        margin: 10px auto
+        background: #555
+        padding: 10px 0
         cursor: pointer
+        transition: background 300ms ease-in-out
         &:hover
-            font-size: 20px
-            
+            background: #333
+        &:first-of-type
+            border-bottom: 5px solid #222
+
 </style>
 
